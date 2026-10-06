@@ -1,0 +1,36 @@
+{
+  "model_version": "1.0.0",
+  "primary_regressor": "Linear Regression",
+  "primary_classifier": "Logistic Regression",
+  "feature_count": 23,
+  "features": [
+    "public_speaking_comfort",
+    "interview_confidence",
+    "hesitation_frequency",
+    "opinion_expression_comfort",
+    "nervousness_level",
+    "unexpected_questions_comfort",
+    "fear_of_judgment",
+    "technical_explanation_comfort",
+    "speaking_duration",
+    "words_per_minute",
+    "response_length_words",
+    "pause_frequency",
+    "filler_word_count",
+    "speech_consistency",
+    "sentiment_score",
+    "clarity_score",
+    "self_efficacy_index",
+    "anxiety_penalty_index",
+    "pacing_optimality",
+    "filler_density",
+    "pause_ratio",
+    "fluency_composite",
+    "clarity_sentiment_interaction"
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ]
+}

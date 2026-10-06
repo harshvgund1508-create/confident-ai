@@ -1,0 +1,408 @@
+{
+  "dataset_info": {
+    "total_samples": 2500,
+    "train_samples": 2000,
+    "test_samples": 500,
+    "num_features": 23,
+    "feature_names": [
+      "public_speaking_comfort",
+      "interview_confidence",
+      "hesitation_frequency",
+      "opinion_expression_comfort",
+      "nervousness_level",
+      "unexpected_questions_comfort",
+      "fear_of_judgment",
+      "technical_explanation_comfort",
+      "speaking_duration",
+      "words_per_minute",
+      "response_length_words",
+      "pause_frequency",
+      "filler_word_count",
+      "speech_consistency",
+      "sentiment_score",
+      "clarity_score",
+      "self_efficacy_index",
+      "anxiety_penalty_index",
+      "pacing_optimality",
+      "filler_density",
+      "pause_ratio",
+      "fluency_composite",
+      "clarity_sentiment_interaction"
+    ],
+    "classes": [
+      "High",
+      "Low",
+      "Moderate"
+    ],
+    "target_distribution": {
+      "Low": 1023,
+      "Moderate": 971,
+      "High": 506
+    }
+  },
+  "regression_models": {
+    "Linear Regression": {
+      "MAE": 2.297,
+      "MSE": 8.406,
+      "RMSE": 2.899,
+      "R2": 0.9746
+    },
+    "Decision Tree": {
+      "MAE": 3.584,
+      "MSE": 19.585,
+      "RMSE": 4.426,
+      "R2": 0.9408
+    },
+    "Gradient Boosting": {
+      "MAE": 2.517,
+      "MSE": 9.844,
+      "RMSE": 3.137,
+      "R2": 0.9702
+    },
+    "Random Forest Regressor": {
+      "MAE": 2.668,
+      "MSE": 10.824,
+      "RMSE": 3.29,
+      "R2": 0.9673
+    }
+  },
+  "best_regression_model": {
+    "name": "Linear Regression",
+    "metrics": {
+      "MAE": 2.297,
+      "MSE": 8.406,
+      "RMSE": 2.899,
+      "R2": 0.9746
+    }
+  },
+  "classification_models": {
+    "Logistic Regression": {
+      "Accuracy": 0.924,
+      "Precision": 0.9242,
+      "Recall": 0.924,
+      "F1_Score": 0.9241,
+      "Confusion_Matrix": [
+        [
+          92,
+          0,
+          9
+        ],
+        [
+          0,
+          194,
+          11
+        ],
+        [
+          8,
+          10,
+          176
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "Accuracy": 0.894,
+      "Precision": 0.8943,
+      "Recall": 0.894,
+      "F1_Score": 0.8941,
+      "Confusion_Matrix": [
+        [
+          88,
+          0,
+          13
+        ],
+        [
+          0,
+          190,
+          15
+        ],
+        [
+          11,
+          14,
+          169
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "Accuracy": 0.922,
+      "Precision": 0.9223,
+      "Recall": 0.922,
+      "F1_Score": 0.9221,
+      "Confusion_Matrix": [
+        [
+          91,
+          0,
+          10
+        ],
+        [
+          0,
+          194,
+          11
+        ],
+        [
+          9,
+          9,
+          176
+        ]
+      ]
+    },
+    "Random Forest Classifier": {
+      "Accuracy": 0.916,
+      "Precision": 0.9178,
+      "Recall": 0.916,
+      "F1_Score": 0.9164,
+      "Confusion_Matrix": [
+        [
+          88,
+          0,
+          13
+        ],
+        [
+          0,
+          191,
+          14
+        ],
+        [
+          8,
+          7,
+          179
+        ]
+      ]
+    }
+  },
+  "best_classification_model": {
+    "name": "Logistic Regression",
+    "metrics": {
+      "Accuracy": 0.924,
+      "Precision": 0.9242,
+      "Recall": 0.924,
+      "F1_Score": 0.9241,
+      "Confusion_Matrix": [
+        [
+          92,
+          0,
+          9
+        ],
+        [
+          0,
+          194,
+          11
+        ],
+        [
+          8,
+          10,
+          176
+        ]
+      ]
+    }
+  },
+  "feature_importance_regression": [
+    {
+      "feature": "self_efficacy_index",
+      "importance": 0.844
+    },
+    {
+      "feature": "anxiety_penalty_index",
+      "importance": 0.0825
+    },
+    {
+      "feature": "fluency_composite",
+      "importance": 0.0305
+    },
+    {
+      "feature": "clarity_sentiment_interaction",
+      "importance": 0.01
+    },
+    {
+      "feature": "clarity_score",
+      "importance": 0.0055
+    },
+    {
+      "feature": "pause_frequency",
+      "importance": 0.005
+    },
+    {
+      "feature": "pause_ratio",
+      "importance": 0.0049
+    },
+    {
+      "feature": "filler_density",
+      "importance": 0.003
+    },
+    {
+      "feature": "speech_consistency",
+      "importance": 0.0024
+    },
+    {
+      "feature": "sentiment_score",
+      "importance": 0.0017
+    },
+    {
+      "feature": "pacing_optimality",
+      "importance": 0.0016
+    },
+    {
+      "feature": "words_per_minute",
+      "importance": 0.0014
+    },
+    {
+      "feature": "speaking_duration",
+      "importance": 0.0013
+    },
+    {
+      "feature": "filler_word_count",
+      "importance": 0.0013
+    },
+    {
+      "feature": "response_length_words",
+      "importance": 0.0011
+    },
+    {
+      "feature": "hesitation_frequency",
+      "importance": 0.0006
+    },
+    {
+      "feature": "nervousness_level",
+      "importance": 0.0006
+    },
+    {
+      "feature": "fear_of_judgment",
+      "importance": 0.0006
+    },
+    {
+      "feature": "public_speaking_comfort",
+      "importance": 0.0005
+    },
+    {
+      "feature": "interview_confidence",
+      "importance": 0.0004
+    },
+    {
+      "feature": "technical_explanation_comfort",
+      "importance": 0.0004
+    },
+    {
+      "feature": "opinion_expression_comfort",
+      "importance": 0.0003
+    },
+    {
+      "feature": "unexpected_questions_comfort",
+      "importance": 0.0003
+    }
+  ],
+  "feature_importance_classification": [
+    {
+      "feature": "self_efficacy_index",
+      "importance": 0.2044
+    },
+    {
+      "feature": "anxiety_penalty_index",
+      "importance": 0.1206
+    },
+    {
+      "feature": "fluency_composite",
+      "importance": 0.0991
+    },
+    {
+      "feature": "clarity_sentiment_interaction",
+      "importance": 0.0843
+    },
+    {
+      "feature": "filler_density",
+      "importance": 0.0659
+    },
+    {
+      "feature": "pause_ratio",
+      "importance": 0.0635
+    },
+    {
+      "feature": "pause_frequency",
+      "importance": 0.0591
+    },
+    {
+      "feature": "clarity_score",
+      "importance": 0.0404
+    },
+    {
+      "feature": "nervousness_level",
+      "importance": 0.0361
+    },
+    {
+      "feature": "public_speaking_comfort",
+      "importance": 0.028
+    },
+    {
+      "feature": "hesitation_frequency",
+      "importance": 0.024
+    },
+    {
+      "feature": "words_per_minute",
+      "importance": 0.0192
+    },
+    {
+      "feature": "speech_consistency",
+      "importance": 0.0192
+    },
+    {
+      "feature": "interview_confidence",
+      "importance": 0.0186
+    },
+    {
+      "feature": "unexpected_questions_comfort",
+      "importance": 0.0186
+    },
+    {
+      "feature": "fear_of_judgment",
+      "importance": 0.0165
+    },
+    {
+      "feature": "response_length_words",
+      "importance": 0.0153
+    },
+    {
+      "feature": "filler_word_count",
+      "importance": 0.0151
+    },
+    {
+      "feature": "sentiment_score",
+      "importance": 0.0147
+    },
+    {
+      "feature": "pacing_optimality",
+      "importance": 0.0126
+    },
+    {
+      "feature": "opinion_expression_comfort",
+      "importance": 0.0101
+    },
+    {
+      "feature": "speaking_duration",
+      "importance": 0.0098
+    },
+    {
+      "feature": "technical_explanation_comfort",
+      "importance": 0.0049
+    }
+  ],
+  "confusion_matrix_classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "confusion_matrix": [
+    [
+      92,
+      0,
+      9
+    ],
+    [
+      0,
+      194,
+      11
+    ],
+    [
+      8,
+      10,
+      176
+    ]
+  ]
+}
